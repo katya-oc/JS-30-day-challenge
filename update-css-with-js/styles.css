@@ -1,0 +1,55 @@
+:root {
+  --base: rgb(159, 245, 72);
+  --sizing: 50px;
+  --corners: 5px;
+}
+
+body {
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.controls {
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin: 0 1.5rem 0 0.5rem;
+  cursor: pointer;
+}
+
+.color-square {
+  width: 4rem;
+}
+
+.range-inpt {
+  height: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0px gray;
+  background: linear-gradient(90deg, white 60%, white 60%);
+}
+
+.size {
+  background: linear-gradient(90deg, var(--base) 16.7%, white 16.7%);
+}
+
+.range-inpt::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--base);
+  box-shadow: 0 1px 4px 0px gray;
+}
+
+.square {
+  margin: 0 auto;
+  width: var(--sizing);
+  height: var(--sizing);
+  background: var(--base);
+  border-radius: var(--corners);
+}

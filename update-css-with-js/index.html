@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Update CSS Variables with JS</title>
+</head>
+
+<body>
+  <div class="controls">
+    <label for="sizing">Sizing:</label>
+    <input class="range-inpt size" type="range" name="sizing" min="10" max="300" value="50" data-sizing="px">
+
+    <label for="corners">Corners:</label>
+    <input class="range-inpt corner" type="range" name="corners" min="0" max="50" value="0" data-sizing="px">
+
+    <label for="base">Base color:</label>
+    <input class="color-square" type="color" name="base" value="#9ff548">
+  </div>
+
+  <div class="square"></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
